@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-paris-06-24-2020__patch2-10-01-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>rt_test_flow</internal_name>
+        <label_cache>[{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id","label":"4➛Incident Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident_task","column_name":"sys_id"},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number","label":"4➛Incident Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"number"},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Record","label":"3.2➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Table","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.table_name","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Count","label":"3.2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Records","label":"3.2➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.variable","label":"1➛FinalScore","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0b97ad05-e766-4c0b-ba21-f353243c1777"}},{"name":"25c78ad7-08b2-48ce-b938-42e0ee6d76d6.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"ddd076f3-993c-471d-a50d-98ebc59d12e0.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description"},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score","label":"1➛Sentiment Score","reference_display":"Sentiment Score","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5d0b3f1f-5bb4-4483-881e-95af152f64b8"}},{"name":"8cafce89-cc9f-4fc4-b382-da46a2b4bc28.Change Task","label":"3.1➛Change Task","reference":"change_task","reference_display":"Change Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record","label":"4➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Table","label":"4➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"Created or Updated_1.current.caller_id.first_name","label":"Trigger➛Incident Record➛Caller➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created or Updated_1.current.caller_id.last_name","label":"Trigger➛Incident Record➛Caller➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created or Updated_1.current.description","label":"Trigger➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description"}]</label_cache>
+        <latest_snapshot>704ceeb6dbfb90100015b298f49619a5</latest_snapshot>
+        <master_snapshot>704ceeb6dbfb90100015b298f49619a5</master_snapshot>
+        <name>RT:Sentiment Analysis-Add TASK &amp; POST message</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>8c0d7c8edb72e0500015b298f49619b8</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:40:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c845f17edb3b90100015b298f49619cb</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>RT:Sentiment Analysis-Add TASK &amp; POST message</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name>sys_hub_flow_c845f17edb3b90100015b298f49619cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-11 19:15:15</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c845f17edb3b90100015b298f49619cb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c845f17edb3b90100015b298f49619cb"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="incident">incident_stateNOT IN6,7,8<item display_value="6,7,8" endquery="false" field="incident_state" goto="false" newquery="false" operator="NOT IN" or="false" value="6,7,8"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c0d7c8edb72e0500015b298f49619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:47</sys_updated_on>
+        <table>incident</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"080d7c8edb72e0500015b298f49619b9","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>c845f17edb3b90100015b298f49619cb</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:47</sys_created_on>
+        <sys_id>080d7c8edb72e0500015b298f49619b9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-11 19:15:15</sys_updated_on>
+        <trigger display_value="">8c0d7c8edb72e0500015b298f49619b8</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>080d7c8edb72e0500015b298f49619b9</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:47</sys_created_on>
+        <sys_id>8c0d7c8edb72e0500015b298f49619b9</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c845f17edb3b90100015b298f49619cb^sys_idNOT IN080d7c8edb72e0500015b298f49619b9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb^sys_idNOT INa3a5b97edb3b90100015b298f49619b3"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>a3a5b97edb3b90100015b298f49619b3</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a3a5b97edb3b90100015b298f49619b3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a3a5b97edb3b90100015b298f49619b3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>2fa5b97edb3b90100015b298f49619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 14:42:31</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a3a5b97edb3b90100015b298f49619b3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>67a5b97edb3b90100015b298f49619b4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:54</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a3a5b97edb3b90100015b298f49619b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>6ba5b97edb3b90100015b298f49619b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:20:24</sys_updated_on>
+        <value>incident_stateNOT IN6,7,8</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c845f17edb3b90100015b298f49619cb^sys_idNOT IN8845f17edb3b90100015b298f49619cd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c845f17edb3b90100015b298f49619cb</id>
+        <name>RT Test Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:40:38</sys_created_on>
+        <sys_id>8845f17edb3b90100015b298f49619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 14:40:38</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=c845f17edb3b90100015b298f49619cb^sys_idNOT IN5fa5b97edb3b90100015b298f49619a5,dfa5b13edb3b90100015b298f4961951,eba5b97edb3b90100015b298f49619ab"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD57fc3c8e7372e05043d4579aee0e5e0f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</model>
+        <model_id>c845f17edb3b90100015b298f49619cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:30</sys_created_on>
+        <sys_id>5fa5b97edb3b90100015b298f49619a5</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</model>
+        <model_id>c845f17edb3b90100015b298f49619cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:30</sys_created_on>
+        <sys_id>dfa5b13edb3b90100015b298f4961951</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</model>
+        <model_id>c845f17edb3b90100015b298f49619cb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>eba5b97edb3b90100015b298f49619ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb^sys_idNOT IN2dde8e32dbbb90100015b298f496197b,2fa5b97edb3b90100015b298f49619b6,7635c67adb7b90100015b298f4961951,eadf1a7edbbb90100015b298f49619fe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <order>4</order>
+        <parent_ui_id>6a72448d-b92b-40ae-84f3-a23882019777</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:25</sys_created_on>
+        <sys_id>2dde8e32dbbb90100015b298f496197b</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <ui_id>23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2dde8e32dbbb90100015b298f496197b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2dde8e32dbbb90100015b298f496197b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>74fb2ab6dbfb90100015b298f4961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <value>incident_task</value>
+        <variable display_value="Table">957cdff1531003003bf1d9109ec58753</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2dde8e32dbbb90100015b298f496197b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:25</sys_created_on>
+        <sys_id>a1de8e32dbbb90100015b298f496197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:32:25</sys_updated_on>
+        <value>incident_task</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2dde8e32dbbb90100015b298f496197b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>2dde8e32dbbb90100015b298f496197b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:25</sys_created_on>
+        <sys_id>21de8e32dbbb90100015b298f496197e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:38:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Incident Management","value":"12a586cd0bb23200ecfd818393673a30"}^short_description=Attention Required for {{Created or Updated_1.current.number}}as it has SentimentScore of less than 50%^work_notes=Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}^incident={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>2dde8e32dbbb90100015b298f496197b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>f0fb2ab6dbfb90100015b298f4961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value>assignment_group={"display":"Incident Management","value":"12a586cd0bb23200ecfd818393673a30"}^short_description=Attention Required for {{Created or Updated_1.current.number}}as it has SentimentScore of less than 50%^work_notes=Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}^incident={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>2dde8e32dbbb90100015b298f496197b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:25</sys_created_on>
+        <sys_id>69de8e32dbbb90100015b298f496197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:32:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>2dde8e32dbbb90100015b298f496197b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>30fb2ab6dbfb90100015b298f4961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Sentiment Score">d7d475fadb3b90100015b298f49619c8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>2fa5b97edb3b90100015b298f49619b6</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <ui_id>ddaa5423-50de-41a9-97d0-b03a4ea1af5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2fa5b97edb3b90100015b298f49619b6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2fa5b97edb3b90100015b298f49619b6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 15:18:48</sys_created_on>
+        <sys_id>cbfd7df2db7b90100015b298f4961968</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 15:50:28</sys_updated_on>
+        <value/>
+        <variable display_value="Text to Evaluate">3fe979fedb3b90100015b298f49619be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2fa5b97edb3b90100015b298f49619b6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>text_to_evaluate</field>
+        <id>2fa5b97edb3b90100015b298f49619b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 15:18:48</sys_created_on>
+        <sys_id>4bfd7df2db7b90100015b298f4961968</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:46:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_d7d475fadb3b90100015b298f49619c8</table>
+        <value>{{Created or Updated_1.current.description}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add Worknote">cdc8896487110300123eaf8e36cb0b24</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 15:50:28</sys_created_on>
+        <sys_id>7635c67adb7b90100015b298f4961951</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <ui_id>ddd076f3-993c-471d-a50d-98ebc59d12e0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7635c67adb7b90100015b298f4961951"/>
+    <sys_element_mapping action="delete_multiple" query="id=7635c67adb7b90100015b298f4961951"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_task</field>
+        <id>7635c67adb7b90100015b298f4961951</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 15:50:28</sys_created_on>
+        <sys_id>fa35c67adb7b90100015b298f4961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 15:50:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d7227a473210300e4fd234ffff6a712</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_task</field>
+        <id>7635c67adb7b90100015b298f4961951</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>70fb2ab6dbfb90100015b298f496197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_work_note</field>
+        <id>7635c67adb7b90100015b298f4961951</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 15:57:54</sys_created_on>
+        <sys_id>33e68ebadb7b90100015b298f4961964</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:00:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d7227a473210300e4fd234ffff6a712</table>
+        <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_work_note</field>
+        <id>7635c67adb7b90100015b298f4961951</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>34fb2ab6dbfb90100015b298f496197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
+        <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <order>5</order>
+        <parent_ui_id>6a72448d-b92b-40ae-84f3-a23882019777</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>eadf1a7edbbb90100015b298f49619fe</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <ui_id>b04a120c-5326-4ca8-a17a-7106f994fcd7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=eadf1a7edbbb90100015b298f49619fe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>38fb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <value>Potential Dissatified Customer Alert</value>
+        <variable display_value="Title">290ff9c713e0030039a039ed9344b08c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>62df5a7edbbb90100015b298f4961903</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:33:39</sys_updated_on>
+        <value>Click to view details</value>
+        <variable display_value="Action Name">859822431324030039a039ed9344b0f7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:14:24</sys_created_on>
+        <sys_id>9f2622b2dbfb90100015b298f4961997</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:33:39</sys_updated_on>
+        <value/>
+        <variable display_value="Action URL">349822431324030039a039ed9344b0df</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>aedf5a7edbbb90100015b298f4961902</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:37:45</sys_updated_on>
+        <value/>
+        <variable display_value="Theme Color (Hex)">419862431324030039a039ed9344b003</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>bcfb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <value>Click to view details</value>
+        <variable display_value="Action Name">790ff9c713e0030039a039ed9344b0bc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>e2df5a7edbbb90100015b298f4961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <value>Potential Dissatified Customer Alert</value>
+        <variable display_value="Title">f49822431324030039a039ed9344b0bb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>eadf5a7edbbb90100015b298f4961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <value>https://outlook.office.com/webhook/7b1f5503-2b71-4b51-965a-2df5e58184e9@189de737-c93a-4f5a-8b68-6f4ca9941912/IncomingWebhook/74621ffc0f2c4747bc0fe295ff6471a3/7009b867-3370-4597-83ad-a9df9a10f309</value>
+        <variable display_value="Webhook URL">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>eadf1a7edbbb90100015b298f49619fe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>f8fb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <value>https://outlook.office.com/webhook/7b1f5503-2b71-4b51-965a-2df5e58184e9@189de737-c93a-4f5a-8b68-6f4ca9941912/IncomingWebhook/74621ffc0f2c4747bc0fe295ff6471a3/7009b867-3370-4597-83ad-a9df9a10f309</value>
+        <variable display_value="Webhook URL">d90f79c713e0030039a039ed9344b0f1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=eadf1a7edbbb90100015b298f49619fe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>b4fb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>62df5a7edbbb90100015b298f4961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>30fb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value>https://dev96882.service-now.com/nav_to.do?uri=incident_task.do?sys_id={{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>2adf5a7edbbb90100015b298f4961901</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:33:39</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>https://dev96882.service-now.com/nav_to.do?uri=incident_task.do?sys_id={{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>b8fb2ab6dbfb90100015b298f4961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value>Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}
+Please c ontact customer and take corrective action. A task has also been opened and assigned to your team. Action Task is  {{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>aedf5a7edbbb90100015b298f4961900</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:36:16</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}
+Please c ontact customer and take corrective action. A task has also been opened and assigned to your team. Action Task is  {{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_theme_color_hex_</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>aedf5a7edbbb90100015b298f4961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>7cfb2ab6dbfb90100015b298f4961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>66df5a7edbbb90100015b298f4961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:39:37</sys_created_on>
+        <sys_id>f0fb2ab6dbfb90100015b298f4961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:39:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>eadf1a7edbbb90100015b298f49619fe</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 17:46:46</sys_created_on>
+        <sys_id>eadf5a7edbbb90100015b298f4961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 17:46:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eadf1a7edbbb90100015b298f49619fe^sys_idNOT INc19aa676dbfb90100015b298f4961997"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_action_url</input_name>
+        <instance>eadf1a7edbbb90100015b298f49619fe</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_action_url":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:33:38</sys_created_on>
+        <sys_id>c19aa676dbfb90100015b298f4961997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:33:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb^sys_idNOT IN29de8e32dbbb90100015b298f496197f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2dde8e32dbbb90100015b298f496197e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:25</sys_created_on>
+        <sys_id>29de8e32dbbb90100015b298f496197f</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:48</sys_updated_on>
+        <ui_id>6a72448d-b92b-40ae-84f3-a23882019777</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=29de8e32dbbb90100015b298f496197f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>29de8e32dbbb90100015b298f496197f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:26</sys_created_on>
+        <sys_id>e9de8e32dbbb90100015b298f4961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:32:26</sys_updated_on>
+        <value>Score less than .50</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=29de8e32dbbb90100015b298f496197f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>29de8e32dbbb90100015b298f496197f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:26</sys_created_on>
+        <sys_id>69de8e32dbbb90100015b298f4961983</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:44:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}&lt;=0.50</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>29de8e32dbbb90100015b298f496197f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 16:32:26</sys_created_on>
+        <sys_id>a5de8e32dbbb90100015b298f4961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 16:32:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb^sys_idNOT IN13a5b97edb3b90100015b298f49619a4,27a5b97edb3b90100015b298f49619aa,6fa5b97edb3b90100015b298f49619af"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:30</sys_created_on>
+        <sys_id>13a5b97edb3b90100015b298f49619a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 14:42:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>27a5b97edb3b90100015b298f49619aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 14:42:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 14:42:31</sys_created_on>
+        <sys_id>6fa5b97edb3b90100015b298f49619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 14:42:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c845f17edb3b90100015b298f49619cb^sys_idNOT INd94c22f6dbfb90100015b298f496197f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"d94c22f6dbfb90100015b298f496197f","name":"plan"}}</plan>
+        <plan_id>c845f17edb3b90100015b298f49619cb</plan_id>
+        <snapshot>704ceeb6dbfb90100015b298f49619a5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d94c22f6dbfb90100015b298f496197f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:47</sys_updated_on>
+        <trigger display_value="">8c0d7c8edb72e0500015b298f49619b8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>rtsentimentanalysisadd_task__post_message</internal_name>
+        <label_cache>[{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id","label":"4➛Incident Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident_task","column_name":"sys_id"},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number","label":"4➛Incident Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"number"},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Record","label":"3.2➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Table","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.table_name","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Count","label":"3.2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Records","label":"3.2➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.variable","label":"1➛FinalScore","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0b97ad05-e766-4c0b-ba21-f353243c1777"}},{"name":"25c78ad7-08b2-48ce-b938-42e0ee6d76d6.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"ddd076f3-993c-471d-a50d-98ebc59d12e0.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description"},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score","label":"1➛Sentiment Score","reference_display":"Sentiment Score","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5d0b3f1f-5bb4-4483-881e-95af152f64b8"}},{"name":"8cafce89-cc9f-4fc4-b382-da46a2b4bc28.Change Task","label":"3.1➛Change Task","reference":"change_task","reference_display":"Change Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record","label":"4➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Table","label":"4➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"Created or Updated_1.current.caller_id.first_name","label":"Trigger➛Incident Record➛Caller➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created or Updated_1.current.caller_id.last_name","label":"Trigger➛Incident Record➛Caller➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created or Updated_1.current.description","label":"Trigger➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description"}]</label_cache>
+        <master>true</master>
+        <name>RT:Sentiment Analysis-Add TASK &amp; POST message</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">c845f17edb3b90100015b298f49619cb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>704ceeb6dbfb90100015b298f49619a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5^sys_idNOT INc14ceeb6dbfb90100015b298f49619ff"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>c14ceeb6dbfb90100015b298f49619ff</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:47</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c14ceeb6dbfb90100015b298f49619ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c14ceeb6dbfb90100015b298f49619ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>0d4c22f6dbfb90100015b298f4961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c14ceeb6dbfb90100015b298f49619ff</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>494c22f6dbfb90100015b298f4961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>incident_stateNOT IN6,7,8</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c14ceeb6dbfb90100015b298f49619ff</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>854c22f6dbfb90100015b298f4961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=704ceeb6dbfb90100015b298f49619a5^sys_idNOT INf84ceeb6dbfb90100015b298f49619a5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>704ceeb6dbfb90100015b298f49619a5</id>
+        <name>RT:SentimentAnalysis-Add TASK &amp; POST message</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>f84ceeb6dbfb90100015b298f49619a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:40:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN304ceeb6dbfb90100015b298f49619c0,f44ceeb6dbfb90100015b298f49619a8,f84ceeb6dbfb90100015b298f49619c8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD57fc3c8e7372e05043d4579aee0e5e0f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</model>
+        <model_id>704ceeb6dbfb90100015b298f49619a5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>304ceeb6dbfb90100015b298f49619c0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</model>
+        <model_id>704ceeb6dbfb90100015b298f49619a5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>f44ceeb6dbfb90100015b298f49619a8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</model>
+        <model_id>704ceeb6dbfb90100015b298f49619a5</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>f84ceeb6dbfb90100015b298f49619c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN054ceeb6dbfb90100015b298f49619ee,854ceeb6dbfb90100015b298f49619fb,8d4ceeb6dbfb90100015b298f49619f4,b44ceeb6dbfb90100015b298f49619e8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Add Worknote">cdc8896487110300123eaf8e36cb0b24</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>cdc8896487110300123eaf8e36cb0b24</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>054ceeb6dbfb90100015b298f49619ee</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <ui_id>ddd076f3-993c-471d-a50d-98ebc59d12e0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=054ceeb6dbfb90100015b298f49619ee"/>
+    <sys_element_mapping action="delete_multiple" query="id=054ceeb6dbfb90100015b298f49619ee"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_task</field>
+        <id>054ceeb6dbfb90100015b298f49619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>094ceeb6dbfb90100015b298f49619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d7227a473210300e4fd234ffff6a712</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_task</field>
+        <id>054ceeb6dbfb90100015b298f49619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>8bfcf88edb72e0500015b298f49619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_work_note</field>
+        <id>054ceeb6dbfb90100015b298f49619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>c94ceeb6dbfb90100015b298f49619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_4d7227a473210300e4fd234ffff6a712</table>
+        <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_work_note</field>
+        <id>054ceeb6dbfb90100015b298f49619ee</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>43fcf88edb72e0500015b298f49619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
+        <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>23be39c713e0030039a039ed9344b058</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <order>5</order>
+        <parent_ui_id>6a72448d-b92b-40ae-84f3-a23882019777</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>854ceeb6dbfb90100015b298f49619fb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <ui_id>b04a120c-5326-4ca8-a17a-7106f994fcd7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=854ceeb6dbfb90100015b298f49619fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>07fcf88edb72e0500015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <value>Potential Dissatified Customer Alert</value>
+        <variable display_value="Title">290ff9c713e0030039a039ed9344b08c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>4d4ceeb6dbfb90100015b298f49619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>Click to view details</value>
+        <variable display_value="Action Name">859822431324030039a039ed9344b0f7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>894ceeb6dbfb90100015b298f49619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>https://outlook.office.com/webhook/7b1f5503-2b71-4b51-965a-2df5e58184e9@189de737-c93a-4f5a-8b68-6f4ca9941912/IncomingWebhook/74621ffc0f2c4747bc0fe295ff6471a3/7009b867-3370-4597-83ad-a9df9a10f309</value>
+        <variable display_value="Webhook URL">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>8bfcf88edb72e0500015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <value>Click to view details</value>
+        <variable display_value="Action Name">790ff9c713e0030039a039ed9344b0bc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>c54ceeb6dbfb90100015b298f49619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>Potential Dissatified Customer Alert</value>
+        <variable display_value="Title">f49822431324030039a039ed9344b0bb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>854ceeb6dbfb90100015b298f49619fb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>c7fcf88edb72e0500015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <value>https://outlook.office.com/webhook/7b1f5503-2b71-4b51-965a-2df5e58184e9@189de737-c93a-4f5a-8b68-6f4ca9941912/IncomingWebhook/74621ffc0f2c4747bc0fe295ff6471a3/7009b867-3370-4597-83ad-a9df9a10f309</value>
+        <variable display_value="Webhook URL">d90f79c713e0030039a039ed9344b0f1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=854ceeb6dbfb90100015b298f49619fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>83fcf88edb72e0500015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_name</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>454ceeb6dbfb90100015b298f49619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>0ffcf88edb72e0500015b298f49619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value>https://dev96882.service-now.com/nav_to.do?uri=incident_task.do?sys_id={{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_action_url</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>cd4ceeb6dbfb90100015b298f49619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>https://dev96882.service-now.com/nav_to.do?uri=incident_task.do?sys_id={{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>87fcf88edb72e0500015b298f49619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value>Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}
+Please c ontact customer and take corrective action. A task has also been opened and assigned to your team. Action Task is  {{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>494ceeb6dbfb90100015b298f49619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}
+Please c ontact customer and take corrective action. A task has also been opened and assigned to your team. Action Task is  {{23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>4bfcf88edb72e0500015b298f49619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>0d4ceeb6dbfb90100015b298f49619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>cffcf88edb72e0500015b298f49619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_23be39c713e0030039a039ed9344b058</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>854ceeb6dbfb90100015b298f49619fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>814ceeb6dbfb90100015b298f49619fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=854ceeb6dbfb90100015b298f49619fb^sys_idNOT INc94ceeb6dbfb90100015b298f49619fc"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>ah_action_url</input_name>
+        <instance>854ceeb6dbfb90100015b298f49619fb</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"ah_action_url":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>c94ceeb6dbfb90100015b298f49619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>3f9b1ff1531003003bf1d9109ec58775</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <order>4</order>
+        <parent_ui_id>6a72448d-b92b-40ae-84f3-a23882019777</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>8d4ceeb6dbfb90100015b298f49619f4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <ui_id>23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8d4ceeb6dbfb90100015b298f49619f4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8d4ceeb6dbfb90100015b298f49619f4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>494ceeb6dbfb90100015b298f49619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>incident_task</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8d4ceeb6dbfb90100015b298f49619f4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>8bfcf88edb72e0500015b298f49619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <value>incident_task</value>
+        <variable display_value="Table">957cdff1531003003bf1d9109ec58753</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d4ceeb6dbfb90100015b298f49619f4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>8d4ceeb6dbfb90100015b298f49619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>c54ceeb6dbfb90100015b298f49619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Incident Management","value":"12a586cd0bb23200ecfd818393673a30"}^short_description=Attention Required for {{Created or Updated_1.current.number}}as it has SentimentScore of less than 50%^work_notes=Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}^incident={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>8d4ceeb6dbfb90100015b298f49619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>0bfcf88edb72e0500015b298f49619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value>assignment_group={"display":"Incident Management","value":"12a586cd0bb23200ecfd818393673a30"}^short_description=Attention Required for {{Created or Updated_1.current.number}}as it has SentimentScore of less than 50%^work_notes=Incident {{Created or Updated_1.current.number}} for customer {{Created or Updated_1.current.caller_id.first_name}} {{Created or Updated_1.current.caller_id.last_name}} has received the score of {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}^incident={{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>8d4ceeb6dbfb90100015b298f49619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>054ceeb6dbfb90100015b298f49619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>8d4ceeb6dbfb90100015b298f49619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 05:47:43</sys_created_on>
+        <sys_id>47fcf88edb72e0500015b298f49619d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Sentiment Score">b13c6eb6dbfb90100015b298f49619cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>d7d475fadb3b90100015b298f49619c8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>b44ceeb6dbfb90100015b298f49619e8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <ui_id>ddaa5423-50de-41a9-97d0-b03a4ea1af5f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b44ceeb6dbfb90100015b298f49619e8"/>
+    <sys_element_mapping action="delete_multiple" query="id=b44ceeb6dbfb90100015b298f49619e8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>text_to_evaluate</field>
+        <id>b44ceeb6dbfb90100015b298f49619e8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>bc4ceeb6dbfb90100015b298f49619e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b13c6eb6dbfb90100015b298f49619cb</table>
+        <value>{{Created or Updated_1.current.description}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5^sys_idNOT INf84ceeb6dbfb90100015b298f49619e0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2dde8e32dbbb90100015b298f496197e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="RT:Sentiment Analysis-Add TASK &amp; POST message">704ceeb6dbfb90100015b298f49619a5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>f84ceeb6dbfb90100015b298f49619e0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 05:47:44</sys_updated_on>
+        <ui_id>6a72448d-b92b-40ae-84f3-a23882019777</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f84ceeb6dbfb90100015b298f49619e0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f84ceeb6dbfb90100015b298f49619e0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>704ceeb6dbfb90100015b298f49619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <value>Score less than .50</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f84ceeb6dbfb90100015b298f49619e0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>f84ceeb6dbfb90100015b298f49619e0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>fc4ceeb6dbfb90100015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}&lt;=0.50</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>f84ceeb6dbfb90100015b298f49619e0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>3c4ceeb6dbfb90100015b298f49619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN744ceeb6dbfb90100015b298f49619cd,bc4ceeb6dbfb90100015b298f49619c4,f04ceeb6dbfb90100015b298f49619ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:41:00</sys_created_on>
+        <sys_id>744ceeb6dbfb90100015b298f49619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>bc4ceeb6dbfb90100015b298f49619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:40:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-15 18:40:59</sys_created_on>
+        <sys_id>f04ceeb6dbfb90100015b298f49619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sentiment Analysis Spoke" source="x_1983_sentiment_a">60223dbadb3b90100015b298f496199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sentiment Analysis Spoke">60223dbadb3b90100015b298f496199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-15 18:40:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
