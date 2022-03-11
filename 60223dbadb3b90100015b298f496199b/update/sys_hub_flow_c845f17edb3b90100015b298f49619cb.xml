@@ -12,7 +12,6 @@
         <description/>
         <internal_name>rt_test_flow</internal_name>
         <label_cache>[{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.sys_id","label":"4➛Incident Task Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident_task","column_name":"sys_id"},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record.number","label":"4➛Incident Task Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident_task","column_name":"number"},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c2fa50a2-c0eb-4b18-ba23-6ed7d6704315.Record","label":"3.2➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Table","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5af568d0-e205-4576-9bab-ee2381551068.Record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.table_name","label":"4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7c613c6d-fc28-4a78-ad0a-099b5765ba5f.record","label":"4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.table_name","label":"3.4➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dfda6635-2968-4c46-aa70-cb312aaaed57.record","label":"3.4➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Count","label":"3.2➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Table","label":"3.2➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f7490b9e-9b91-4ed9-ab88-5216538d9f53.Records","label":"3.2➛Incident Task Records","reference":"incident_task","reference_display":"Incident Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.variable","label":"1➛FinalScore","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"0b97ad05-e766-4c0b-ba21-f353243c1777"}},{"name":"25c78ad7-08b2-48ce-b938-42e0ee6d76d6.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{}},{"name":"ddd076f3-993c-471d-a50d-98ebc59d12e0.task","label":"2➛task","reference":"task","reference_display":"Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.short_description","label":"Trigger➛Incident Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"short_description"},{"name":"ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score","label":"1➛Sentiment Score","reference_display":"Sentiment Score","type":"float","base_type":"float","attributes":{"uiType":"float","uiTypeLabel":"Floating Point Number","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5d0b3f1f-5bb4-4483-881e-95af152f64b8"}},{"name":"8cafce89-cc9f-4fc4-b382-da46a2b4bc28.Change Task","label":"3.1➛Change Task","reference":"change_task","reference_display":"Change Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Record","label":"4➛Incident Task Record","reference":"incident_task","reference_display":"Incident Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"23c5d2fb-dd53-4151-b5ab-60a06bbbf7ba.Table","label":"4➛Incident Task Table","reference":"incident_task","reference_display":"Incident Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.number","label":"Trigger➛Incident Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"incident","column_name":"number"},{"name":"Created or Updated_1.current.caller_id.first_name","label":"Trigger➛Incident Record➛Caller➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created or Updated_1.current.caller_id.last_name","label":"Trigger➛Incident Record➛Caller➛Last name","reference":"","reference_display":"Last name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"last_name"},{"name":"Created or Updated_1.current.description","label":"Trigger➛Incident Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"incident","column_name":"description"}]</label_cache>
-        <latest_snapshot>704ceeb6dbfb90100015b298f49619a5</latest_snapshot>
         <master_snapshot>704ceeb6dbfb90100015b298f49619a5</master_snapshot>
         <name>RT:Sentiment Analysis-Add TASK &amp; POST message</name>
         <natlang/>
@@ -156,6 +155,8 @@
         <value>incident_stateNOT IN6,7,8</value>
         <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=a3a5b97edb3b90100015b298f49619b3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=c845f17edb3b90100015b298f49619cb^sys_idNOT IN8845f17edb3b90100015b298f49619cd"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>c845f17edb3b90100015b298f49619cb</id>
@@ -168,6 +169,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-15 14:40:38</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8845f17edb3b90100015b298f49619cd"/>
     <sys_hub_flow_input action="delete_multiple" query="model=c845f17edb3b90100015b298f49619cb^sys_idNOT IN5fa5b97edb3b90100015b298f49619a5,dfa5b13edb3b90100015b298f4961951,eba5b97edb3b90100015b298f49619ab"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -412,6 +414,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c845f17edb3b90100015b298f49619cb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c845f17edb3b90100015b298f49619cb"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb^sys_idNOT IN2dde8e32dbbb90100015b298f496197b,2fa5b97edb3b90100015b298f49619b6,7635c67adb7b90100015b298f4961951,eadf1a7edbbb90100015b298f49619fe"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -512,6 +516,8 @@
         <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2dde8e32dbbb90100015b298f496197b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2dde8e32dbbb90100015b298f496197b"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -561,6 +567,8 @@
         <table>var__m_sys_hub_action_input_d7d475fadb3b90100015b298f49619c8</table>
         <value>{{Created or Updated_1.current.description}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2fa5b97edb3b90100015b298f49619b6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2fa5b97edb3b90100015b298f49619b6"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -632,6 +640,8 @@
         <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
         <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7635c67adb7b90100015b298f4961951"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7635c67adb7b90100015b298f4961951"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -915,6 +925,8 @@ Please c ontact customer and take corrective action. A task has also been opened
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-15 18:33:38</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eadf1a7edbbb90100015b298f49619fe"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=c845f17edb3b90100015b298f49619cb^sys_idNOT IN29de8e32dbbb90100015b298f496197f"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">2dde8e32dbbb90100015b298f496197e</block>
@@ -986,6 +998,10 @@ Please c ontact customer and take corrective action. A task has also been opened
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=29de8e32dbbb90100015b298f496197f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=29de8e32dbbb90100015b298f496197f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c845f17edb3b90100015b298f49619cb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c845f17edb3b90100015b298f49619cb"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb^sys_idNOT IN13a5b97edb3b90100015b298f49619a4,27a5b97edb3b90100015b298f49619aa,6fa5b97edb3b90100015b298f49619af"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>current</element>
@@ -1056,10 +1072,13 @@ Please c ontact customer and take corrective action. A task has also been opened
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c845f17edb3b90100015b298f49619cb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c845f17edb3b90100015b298f49619cb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c845f17edb3b90100015b298f49619cb"/>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c845f17edb3b90100015b298f49619cb^sys_idNOT INd94c22f6dbfb90100015b298f496197f"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"d94c22f6dbfb90100015b298f496197f","name":"plan"}}</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"d94c22f6dbfb90100015b298f496197f","name":"plan","plan_signature":null}}</plan>
         <plan_id>c845f17edb3b90100015b298f49619cb</plan_id>
         <snapshot>704ceeb6dbfb90100015b298f49619a5</snapshot>
         <sys_created_by>admin</sys_created_by>
@@ -1074,6 +1093,7 @@ Please c ontact customer and take corrective action. A task has also been opened
         <sys_updated_on>2021-03-11 05:47:47</sys_updated_on>
         <trigger display_value="">8c0d7c8edb72e0500015b298f49619b8</trigger>
     </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c845f17edb3b90100015b298f49619cb"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
@@ -1177,6 +1197,8 @@ Please c ontact customer and take corrective action. A task has also been opened
         <value>every</value>
         <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=c14ceeb6dbfb90100015b298f49619ff"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=704ceeb6dbfb90100015b298f49619a5^sys_idNOT INf84ceeb6dbfb90100015b298f49619a5"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>704ceeb6dbfb90100015b298f49619a5</id>
@@ -1189,6 +1211,7 @@ Please c ontact customer and take corrective action. A task has also been opened
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-15 18:40:59</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f84ceeb6dbfb90100015b298f49619a5"/>
     <sys_hub_flow_input action="delete_multiple" query="model=704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN304ceeb6dbfb90100015b298f49619c0,f44ceeb6dbfb90100015b298f49619a8,f84ceeb6dbfb90100015b298f49619c8"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1433,6 +1456,8 @@ Please c ontact customer and take corrective action. A task has also been opened
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=704ceeb6dbfb90100015b298f49619a5"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN054ceeb6dbfb90100015b298f49619ee,854ceeb6dbfb90100015b298f49619fb,8d4ceeb6dbfb90100015b298f49619f4,b44ceeb6dbfb90100015b298f49619e8"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1505,6 +1530,8 @@ Please c ontact customer and take corrective action. A task has also been opened
         <table>var__m_sys_hub_action_input_cdc8896487110300123eaf8e36cb0b24</table>
         <value>SentimentScore for the Incident is : {{ddaa5423-50de-41a9-97d0-b03a4ea1af5f.sentiment_score}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=054ceeb6dbfb90100015b298f49619ee"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=054ceeb6dbfb90100015b298f49619ee"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1748,6 +1775,7 @@ Please c ontact customer and take corrective action. A task has also been opened
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-10-15 18:41:00</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=854ceeb6dbfb90100015b298f49619fb"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1847,6 +1875,8 @@ Please c ontact customer and take corrective action. A task has also been opened
         <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8d4ceeb6dbfb90100015b298f49619f4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d4ceeb6dbfb90100015b298f49619f4"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1882,6 +1912,9 @@ Please c ontact customer and take corrective action. A task has also been opened
         <table>var__m_sys_hub_action_input_b13c6eb6dbfb90100015b298f49619cb</table>
         <value>{{Created or Updated_1.current.description}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b44ceeb6dbfb90100015b298f49619e8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b44ceeb6dbfb90100015b298f49619e8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=704ceeb6dbfb90100015b298f49619a5^sys_idNOT INf84ceeb6dbfb90100015b298f49619e0"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">2dde8e32dbbb90100015b298f496197e</block>
@@ -1953,6 +1986,10 @@ Please c ontact customer and take corrective action. A task has also been opened
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f84ceeb6dbfb90100015b298f49619e0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f84ceeb6dbfb90100015b298f49619e0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=704ceeb6dbfb90100015b298f49619a5"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5^sys_idNOT IN744ceeb6dbfb90100015b298f49619cd,bc4ceeb6dbfb90100015b298f49619c4,f04ceeb6dbfb90100015b298f49619ad"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>table_name</element>
@@ -2023,4 +2060,11 @@ Please c ontact customer and take corrective action. A task has also been opened
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_704ceeb6dbfb90100015b298f49619a5"/>
+    <sys_hub_flow action="update">
+        <sys_id>c845f17edb3b90100015b298f49619cb</sys_id>
+        <latest_snapshot>704ceeb6dbfb90100015b298f49619a5</latest_snapshot>
+    </sys_hub_flow>
 </record_update>

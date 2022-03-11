@@ -5,6 +5,7 @@
         <id>x_1983_sentiment_a.AzureSentimentAnalysis</id>
         <multiple_connections>false</multiple_connections>
         <name>AzureSentimentAnalysis</name>
+        <parent/>
         <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
         <sys_class_name>sys_alias</sys_class_name>
         <sys_created_by>admin</sys_created_by>
